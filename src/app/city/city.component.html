@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="card">
+    <flash-messages></flash-messages>
+    <form (submit)="addNewCity()">
+      <label for="city"> Название города </label>
+      <input type="text" class="form-control" id="city" [(ngModel)]="name" name="name">
+      <button type="submit" class="btn btn-success mt-3"> Добавить город </button>
+    </form>
+  </div>
+</div>
+<div class="container">
+  <div class="card">
+    <p>Города в базе </p>
+      <div>
+          <span class="badge badge-pill badge-light" *ngFor="let item of cities">{{ item.name }}</span>
+      </div>
+  </div>
+</div>

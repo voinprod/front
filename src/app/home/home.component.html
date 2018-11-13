@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="card mt-3">
+      <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Имя</th>
+              <th scope="col">Задачи</th>
+              <th scope="col">Описание</th>
+              <th scope="col">Город</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of users">
+              <th scope="row">1</th>
+              <td>{{ item.name }}</td>
+              <td>{{ item.tasks }}</td>
+              <td>{{ item.description }}</td>
+              <td>{{ item.city[0].name }}</td>
+            </tr>
+          </tbody>
+        </table>
+  </div>
+</div>

@@ -10,11 +10,19 @@ import { HttpModule } from '@angular/http';
 import { AuthService } from "./services/auth.service";
 import { PanelComponent } from './panel/panel.component';
 import { AuthGuard } from "../app/guards/auth.guard";
+import { NavbarComponent } from './navbar/navbar.component';
+import { CityComponent } from './city/city.component';
+import { UserComponent } from './user/user.component';
+import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
     AuthComponent,
-    PanelComponent
+    PanelComponent,
+    NavbarComponent,
+    CityComponent,
+    UserComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

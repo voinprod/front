@@ -26,7 +26,7 @@ export class AuthService {
   }
 
 
-
+  // Метод для обработки в guard, проверяем наличие токена
   loggedIn() {
     if (localStorage.access_token == undefined) {
       return false;
