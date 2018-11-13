@@ -25,14 +25,8 @@ export class AuthService {
     this.authToken = token;
   }
 
-  // getAdminPanel(): Observable<any>{
-  //   let header = new Headers();
-  //   this.loadToken();
-  //   header.append('Authorization', this.authToken);
-  //   header.append('Content-Type', 'application/json');
-  //   return this.http.get('http://localhost:3000/users',{headers: header})
-  //           .pipe(map(data => data.json()));
-  // }
+
+
   loggedIn() {
     if (localStorage.access_token == undefined) {
       return false;
@@ -43,10 +37,7 @@ export class AuthService {
   }
   
 
-  loadToken(){
-    const token = localStorage.getItem('access_token');
-    this.authToken = token;
-  }
+
   logoutAdmin(){
     localStorage.clear();
     this.authToken = null;
